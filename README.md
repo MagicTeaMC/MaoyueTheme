@@ -1,4 +1,4 @@
-# MinecraftPurpleTheme
+# MaoyueTheme
 
 Install script:
 ```sh
