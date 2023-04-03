@@ -19,7 +19,11 @@ installTheme(){
     rm /var/www/pterodactyl/resources/scripts/index.tsx
     mv index.tsx /var/www/pterodactyl/resources/scripts/index.tsx
     mv MinecraftPurpleTheme.css /var/www/pterodactyl/resources/scripts/MinecraftPurpleTheme.css
-    cd /var/www/pterodactyl
+    cd /var/www/pterodactyl  
+
+    curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash -
+    apt update
+    apt install -y nodejs
 
     cd /var/www/pterodactyl
     yarn build:production
